@@ -1,0 +1,285 @@
+成功截取屏幕并添加到allure报告: Search页面，保存路径: tests\reports\test_keyword_search_20250912_185434\Search页面.png
+成功截取屏幕并添加到allure报告: 激活输入框，保存路径: tests\reports\test_keyword_search_20250912_185434\激活输入框.png
+成功截取屏幕并添加到allure报告: 输入cat关键词，保存路径: tests\reports\test_keyword_search_20250912_185434\输入cat关键词.png
+成功截取屏幕并添加到allure报告: 搜索结果，保存路径: tests\reports\test_keyword_search_20250912_185434\搜索结果.png
+成功截取屏幕并添加到allure报告: 搜索结果，保存路径: tests\reports\test_keyword_search_20250912_185434\搜索结果.png
+第1次尝试 - OCR识别结果: '= = 7m ; CES (Bo TET Se meet
+
+SEE Ee) SS
+
+LTV, Show(1/28))
+
+ee NES | [SSG a SCO (CENSTIN
+
+~~ ® * r-< ee ety eee 1 '6 GAR f
+i Pegi ce a Rete Bn cia res mc \ eS eS
+
+@a0
+
+(Bes TT ip) © ropeicere )¢S_t. TT - Ce SA OS)', 置信度: 18.301369863013697
+第1次尝试 - 未找到目标文字 'cat'
+识别的详细文本:
+= = 7m ; CES (Bo TET Se meet
+
+SEE Ee) SS
+
+LTV, Show(1/28))
+
+ee NES | [SSG a SCO (CENSTIN
+
+~~ ® * r-< ee ety eee 1 '6 GAR f
+i Pegi ce a Rete Bn cia res mc \ eS eS
+
+@a0
+
+(Bes TT ip) © ropeicere )¢S_t. TT - Ce SA OS)
+第2次尝试 - OCR识别结果: '= = 7m ; CES (Bo TET Se meet
+
+SEE Ee) SS
+
+LTV, Show(1/28))
+
+ee NES | [SSG a SCO (CENSTIN
+
+~~ ® * r-< ee ety eee 1 '6 GAR f
+i Pegi ce a Rete Bn cia res mc \ eS eS
+
+@a0
+
+(Bes TT ip) © ropeicere )¢S_t. TT - Ce SA OS)', 置信度: 18.301369863013697
+第2次尝试 - 未找到目标文字 'cat'
+识别的详细文本:
+= = 7m ; CES (Bo TET Se meet
+
+SEE Ee) SS
+
+LTV, Show(1/28))
+
+ee NES | [SSG a SCO (CENSTIN
+
+~~ ® * r-< ee ety eee 1 '6 GAR f
+i Pegi ce a Rete Bn cia res mc \ eS eS
+
+@a0
+
+(Bes TT ip) © ropeicere )¢S_t. TT - Ce SA OS)
+第3次尝试 - OCR识别结果: '= = 7m ; CES (Bo TET Se meet
+
+SEE Ee) SS
+
+LTV, Show(1/28))
+
+ee NES | [SSG a SCO (CENSTIN
+
+~~ ® * r-< ee ety eee 1 '6 GAR f
+i Pegi ce a Rete Bn cia res mc \ eS eS
+
+@a0
+
+(Bes TT ip) © ropeicere )¢S_t. TT - Ce SA OS)', 置信度: 18.301369863013697
+第3次尝试 - 未找到目标文字 'cat'
+识别的详细文本:
+= = 7m ; CES (Bo TET Se meet
+
+SEE Ee) SS
+
+LTV, Show(1/28))
+
+ee NES | [SSG a SCO (CENSTIN
+
+~~ ® * r-< ee ety eee 1 '6 GAR f
+i Pegi ce a Rete Bn cia res mc \ eS eS
+
+@a0
+
+(Bes TT ip) © ropeicere )¢S_t. TT - Ce SA OS)
+成功截取屏幕并添加到allure报告: Search页面，保存路径: tests\reports\test_keyword_search_20250912_185522\Search页面.png
+成功截取屏幕并添加到allure报告: 激活输入框，保存路径: tests\reports\test_keyword_search_20250912_185522\激活输入框.png
+成功截取屏幕并添加到allure报告: 输入cat关键词，保存路径: tests\reports\test_keyword_search_20250912_185522\输入cat关键词.png
+成功截取屏幕并添加到allure报告: 搜索结果，保存路径: tests\reports\test_keyword_search_20250912_185522\搜索结果.png
+成功截取屏幕并添加到allure报告: 搜索结果，保存路径: tests\reports\test_keyword_search_20250912_185522\搜索结果.png
+第1次尝试 - OCR识别结果: '= = 7m ; CES (Bo TET Se meet
+
+SEE Ee) SS
+
+LTV, Show(1/28))
+
+ee NES | [SSG a SCO (CENSTIN
+
+~~ ® * r-< ee ety eee 1 '6 GAR f
+i Pegi ce a Rete Bn cia res mc \ eS eS
+
+@a0
+
+(Bes TT ip) © ropeicere )¢S_t. TT - Ce SA OS)', 置信度: 18.301369863013697
+第1次尝试 - 未找到目标文字 'cat'
+识别的详细文本:
+= = 7m ; CES (Bo TET Se meet
+
+SEE Ee) SS
+
+LTV, Show(1/28))
+
+ee NES | [SSG a SCO (CENSTIN
+
+~~ ® * r-< ee ety eee 1 '6 GAR f
+i Pegi ce a Rete Bn cia res mc \ eS eS
+
+@a0
+
+(Bes TT ip) © ropeicere )¢S_t. TT - Ce SA OS)
+第2次尝试 - OCR识别结果: '= = 7m ; CES (Bo TET Se meet
+
+SEE Ee) SS
+
+LTV, Show(1/28))
+
+ee NES | [SSG a SCO (CENSTIN
+
+~~ ® * r-< ee ety eee 1 '6 GAR f
+i Pegi ce a Rete Bn cia res mc \ eS eS
+
+@a0
+
+(Bes TT ip) © ropeicere )¢S_t. TT - Ce SA OS)', 置信度: 18.301369863013697
+第2次尝试 - 未找到目标文字 'cat'
+识别的详细文本:
+= = 7m ; CES (Bo TET Se meet
+
+SEE Ee) SS
+
+LTV, Show(1/28))
+
+ee NES | [SSG a SCO (CENSTIN
+
+~~ ® * r-< ee ety eee 1 '6 GAR f
+i Pegi ce a Rete Bn cia res mc \ eS eS
+
+@a0
+
+(Bes TT ip) © ropeicere )¢S_t. TT - Ce SA OS)
+第3次尝试 - OCR识别结果: '= = 7m ; CES (Bo TET Se meet
+
+SEE Ee) SS
+
+LTV, Show(1/28))
+
+ee NES | [SSG a SCO (CENSTIN
+
+~~ ® * r-< ee ety eee 1 '6 GAR f
+i Pegi ce a Rete Bn cia res mc \ eS eS
+
+@a0
+
+(Bes TT ip) © ropeicere )¢S_t. TT - Ce SA OS)', 置信度: 18.301369863013697
+第3次尝试 - 未找到目标文字 'cat'
+识别的详细文本:
+= = 7m ; CES (Bo TET Se meet
+
+SEE Ee) SS
+
+LTV, Show(1/28))
+
+ee NES | [SSG a SCO (CENSTIN
+
+~~ ® * r-< ee ety eee 1 '6 GAR f
+i Pegi ce a Rete Bn cia res mc \ eS eS
+
+@a0
+
+(Bes TT ip) © ropeicere )¢S_t. TT - Ce SA OS)
+成功截取屏幕并添加到allure报告: Search页面，保存路径: tests\reports\test_keyword_search_20250912_185610\Search页面.png
+成功截取屏幕并添加到allure报告: 激活输入框，保存路径: tests\reports\test_keyword_search_20250912_185610\激活输入框.png
+成功截取屏幕并添加到allure报告: 输入cat关键词，保存路径: tests\reports\test_keyword_search_20250912_185610\输入cat关键词.png
+成功截取屏幕并添加到allure报告: 搜索结果，保存路径: tests\reports\test_keyword_search_20250912_185610\搜索结果.png
+成功截取屏幕并添加到allure报告: 搜索结果，保存路径: tests\reports\test_keyword_search_20250912_185610\搜索结果.png
+第1次尝试 - OCR识别结果: '= = 7m ; CES (Bo TET Se meet
+
+SEE Ee) SS
+
+LTV, Show(1/28))
+
+ee NES | [SSG a SCO (CENSTIN
+
+~~ ® * r-< ee ety eee 1 '6 GAR f
+i Pegi ce a Rete Bn cia res mc \ eS eS
+
+@a0
+
+(Bes TT ip) © ropeicere )¢S_t. TT - Ce SA OS)', 置信度: 18.301369863013697
+第1次尝试 - 未找到目标文字 'cat'
+识别的详细文本:
+= = 7m ; CES (Bo TET Se meet
+
+SEE Ee) SS
+
+LTV, Show(1/28))
+
+ee NES | [SSG a SCO (CENSTIN
+
+~~ ® * r-< ee ety eee 1 '6 GAR f
+i Pegi ce a Rete Bn cia res mc \ eS eS
+
+@a0
+
+(Bes TT ip) © ropeicere )¢S_t. TT - Ce SA OS)
+第2次尝试 - OCR识别结果: '= = 7m ; CES (Bo TET Se meet
+
+SEE Ee) SS
+
+LTV, Show(1/28))
+
+ee NES | [SSG a SCO (CENSTIN
+
+~~ ® * r-< ee ety eee 1 '6 GAR f
+i Pegi ce a Rete Bn cia res mc \ eS eS
+
+@a0
+
+(Bes TT ip) © ropeicere )¢S_t. TT - Ce SA OS)', 置信度: 18.301369863013697
+第2次尝试 - 未找到目标文字 'cat'
+识别的详细文本:
+= = 7m ; CES (Bo TET Se meet
+
+SEE Ee) SS
+
+LTV, Show(1/28))
+
+ee NES | [SSG a SCO (CENSTIN
+
+~~ ® * r-< ee ety eee 1 '6 GAR f
+i Pegi ce a Rete Bn cia res mc \ eS eS
+
+@a0
+
+(Bes TT ip) © ropeicere )¢S_t. TT - Ce SA OS)
+第3次尝试 - OCR识别结果: '= = 7m ; CES (Bo TET Se meet
+
+SEE Ee) SS
+
+LTV, Show(1/28))
+
+ee NES | [SSG a SCO (CENSTIN
+
+~~ ® * r-< ee ety eee 1 '6 GAR f
+i Pegi ce a Rete Bn cia res mc \ eS eS
+
+@a0
+
+(Bes TT ip) © ropeicere )¢S_t. TT - Ce SA OS)', 置信度: 18.301369863013697
+第3次尝试 - 未找到目标文字 'cat'
+识别的详细文本:
+= = 7m ; CES (Bo TET Se meet
+
+SEE Ee) SS
+
+LTV, Show(1/28))
+
+ee NES | [SSG a SCO (CENSTIN
+
+~~ ® * r-< ee ety eee 1 '6 GAR f
+i Pegi ce a Rete Bn cia res mc \ eS eS
+
+@a0
+
+(Bes TT ip) © ropeicere )¢S_t. TT - Ce SA OS)

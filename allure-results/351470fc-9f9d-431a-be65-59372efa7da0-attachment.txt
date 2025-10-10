@@ -1,0 +1,39 @@
+2025-09-12 18:54:34,244 - INFO - 初始化ADB工具...
+2025-09-12 18:54:34,461 - INFO - 设备信息: {'model': 'SMARTSTB', 'android_version': '14', 'screen_size': '3840x2160', 'override_size': '1920x1080', 'device_id': '2560050267000059'}
+2025-09-12 18:54:34,461 - INFO - 初始化图像识别工具...
+2025-09-12 18:54:34,484 - INFO - Tesseract已在系统PATH中找到
+2025-09-12 18:54:34,485 - INFO - 图像识别工具初始化成功
+2025-09-12 18:54:34,485 - INFO - 开始执行测试: test_keyword_search
+2025-09-12 18:54:34,712 - INFO - 使用adb指令进入Search页面
+2025-09-12 18:54:38,193 - INFO - 点击遥控OK键
+2025-09-12 18:54:43,663 - INFO - 输入搜索关键词
+2025-09-12 18:55:08,111 - INFO - Tesseract已在系统PATH中找到
+2025-09-12 18:55:17,726 - INFO - 文字查找结果: False
+2025-09-12 18:55:19,554 - INFO - 测试失败，已保存截图到: tests\reports\test_keyword_search_20250912_185434\failure_screenshot.png
+2025-09-12 18:55:19,555 - INFO - 测试 test_keyword_search 执行完成，耗时: 45.07秒
+2025-09-12 18:55:22,572 - INFO - 开始执行测试: test_keyword_search
+2025-09-12 18:55:22,743 - INFO - 使用adb指令进入Search页面
+2025-09-12 18:55:26,205 - INFO - 点击遥控OK键
+2025-09-12 18:55:31,693 - INFO - 输入搜索关键词
+2025-09-12 18:55:56,130 - INFO - Tesseract已在系统PATH中找到
+2025-09-12 18:56:05,549 - INFO - 文字查找结果: False
+2025-09-12 18:56:07,034 - INFO - 测试失败，已保存截图到: tests\reports\test_keyword_search_20250912_185522\failure_screenshot.png
+2025-09-12 18:56:07,034 - INFO - 测试 test_keyword_search 执行完成，耗时: 44.46秒
+2025-09-12 18:56:10,046 - INFO - 开始执行测试: test_keyword_search
+2025-09-12 18:56:10,219 - INFO - 使用adb指令进入Search页面
+2025-09-12 18:56:13,676 - INFO - 点击遥控OK键
+2025-09-12 18:56:19,163 - INFO - 输入搜索关键词
+2025-09-12 18:56:43,546 - INFO - Tesseract已在系统PATH中找到
+2025-09-12 18:56:53,097 - INFO - 文字查找结果: False
+2025-09-12 18:56:54,592 - INFO - 测试失败，已保存截图到: tests\reports\test_keyword_search_20250912_185610\failure_screenshot.png
+2025-09-12 18:56:54,592 - INFO - 测试 test_keyword_search 执行完成，耗时: 44.54秒
+2025-09-12 18:56:57,616 - INFO - 开始执行测试: test_keyword_search
+2025-09-12 18:56:57,776 - INFO - 使用adb指令进入Search页面
+2025-09-12 18:57:01,214 - INFO - 点击遥控OK键
+2025-09-12 18:57:06,690 - INFO - 输入搜索关键词
+2025-09-12 18:57:31,221 - INFO - Tesseract已在系统PATH中找到
+2025-09-12 18:57:40,630 - INFO - 文字查找结果: False
+2025-09-12 18:57:42,137 - INFO - 测试失败，已保存截图到: tests\reports\test_keyword_search_20250912_185657\failure_screenshot.png
+2025-09-12 18:57:42,138 - INFO - 测试 test_keyword_search 执行完成，耗时: 44.52秒
+2025-09-12 18:57:42,139 - INFO - 图像识别工具会话结束
+2025-09-12 18:57:42,139 - INFO - ADB工具会话结束
