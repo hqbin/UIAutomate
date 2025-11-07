@@ -1,0 +1,3 @@
+成功截取屏幕并添加到allure报告: 路径初始化后，保存路径: tests\reports\test_STB_FU_PO_2510230124_20251107_183600\路径初始化后.png
+成功截取屏幕并添加到allure报告: 路径操作完成后，保存路径: tests\reports\test_STB_FU_PO_2510230124_20251107_183600\路径操作完成后.png
+成功截取屏幕并添加到allure报告: 目标操作完成后，保存路径: tests\reports\test_STB_FU_PO_2510230124_20251107_183600\目标操作完成后.png

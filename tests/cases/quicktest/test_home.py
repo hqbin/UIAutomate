@@ -49,7 +49,7 @@ def test_goto_search(test_setup):
 # 测试Search搜索功能
 @allure.feature("Home")
 @allure.story("entrance")
-@pytest.mark.test
+@pytest.mark.smoke
 def test_keyword_search(test_setup):
     """测试Search页面关键字搜索"""
     test_dir = test_setup["test_dir"]

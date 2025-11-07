@@ -992,6 +992,48 @@ class ADBUtils:
             bool: 操作是否成功
         """
         return self.press_key('KEYCODE_CHANNEL_DOWN')
+
+    def 点击遥控Netflix热键(self):
+        """
+        模拟点击遥控器Netflix热键
+        
+        Returns:
+            bool: 操作是否成功
+        """
+        return self.press_key('KEYCODE_F2')
+    def 点击遥控YOUTUBE热键(self):
+        """
+        模拟点击遥控器YOUTUBE热键
+        
+        Returns:
+            bool: 操作是否成功
+        """
+        return self.press_key('KEYCODE_F1')
+    def 点击遥控DISNEY热键(self):
+        """
+        模拟点击遥控器DISNEY热键
+        
+        Returns:
+            bool: 操作是否成功
+        """
+        return self.press_key('317')
+    def 点击遥控PRIME_VIDEO热键(self):
+        """
+        模拟点击遥控器PRIME_VIDEO热键
+        
+        Returns:
+            bool: 操作是否成功
+        """
+        return self.press_key('KEYCODE_F4')
+    def 点击遥控语音键(self):
+        """
+        模拟点击遥控器语音键
+        
+        Returns:
+            bool: 操作是否成功
+        """
+        return self.press_key('231')
+
     
     def 添加截图到allure报告(self, name="screenshot", test_dir=None):
         """

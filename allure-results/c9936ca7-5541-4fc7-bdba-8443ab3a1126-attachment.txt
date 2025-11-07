@@ -1,0 +1,6 @@
+时间: 11-07 18:36:58.766
+操作时间: 2025-11-07 18:36:58.448
+时间匹配(分钟级别): True
+统一格式化后操作时间: 2025-11-07 18:36
+统一格式化后事件时间: 2025-11-07 18:36
+日志: 11-07 18:36:58.766  2961  3031 I zeasn_db: Storage Success; _id = 5EventBean{ data = 2025-11-07T10:36:58.751,GMT-5:00,,,,990720456112211278,98:C9:BE:38:32:C8,d62903433941333931118f29f9e1cb00,US,en,WHALEOS_SDMC_AMLS905Y5_4KSTB_MTP_P1,7,S905Y5_Brand_0001,10409c21808d834ed5bc58fbcd0b1fee82,wtv10,WHALEOSZEASNS905Y54KSTBMTP0001,WHALEOS_ZEASN_AMLS905Y5_4KSTB_MTP_00000002,WhaleLauncher,2.0.2.32-ZSNMaster-prod,1.2.00,1920*1080*240,9,WhaleOS_10,110100006,Search,,[{"appName":"PBS"@@"packageName":"com.pbs.video"@@"versionName":""@@"versionCode":""}],,,,,,,,,,98:C9:BE:38:32:C8||172.16.52.180||Ethernet,, event_id=110100006, _id=0, busiType=WHALEOS_AML_CLIENT_LOG}

@@ -1,0 +1,1 @@
+{"uuid": "e575b320-dd30-4bdd-95c7-ae360c7ba8ba", "children": ["70be1eeb-ff7e-48ba-bbac-5537d872f5ce"], "befores": [{"name": "capture_logcat", "status": "passed", "start": 1762511758983, "stop": 1762511760080}], "afters": [{"name": "capture_logcat::0", "status": "passed", "start": 1762511881894, "stop": 1762511881896}], "start": 1762511758983, "stop": 1762511881896}
