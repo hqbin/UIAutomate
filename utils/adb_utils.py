@@ -309,7 +309,14 @@ class ADBUtils:
             print(f"安装APK失败: {stderr}")
             return False
         return True
-    
+
+    def reboot(self):
+        print("重启设备")
+        return_code, stdout, stderr = self._run_adb_command(['reboot'])
+        if return_code != 0:
+            print(f"reboot失败: {stderr}")
+            return False
+
     def 卸载应用(self, package_name):
         """
         卸载应用
@@ -1033,6 +1040,23 @@ class ADBUtils:
             bool: 操作是否成功
         """
         return self.press_key('231')
+    def 点击遥控设置键(self):
+        """
+        模拟点击遥控器设置键
+        
+        Returns:
+            bool: 操作是否成功
+        """
+        return self.press_key('KEYCODE_PRIVACY_SCREEN_T')
+        
+    def 打开PID菜单(self):
+        """
+        PID菜单键
+        
+        Returns:
+            bool: 操作是否成功
+        """
+        return self.启动应用("com.zeasn.whaleos.settings","com.zeasn.settings.project.id.menu.activity.ProjectIDMenuActivity")
 
     
     def 添加截图到allure报告(self, name="screenshot", test_dir=None):

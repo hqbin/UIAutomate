@@ -64,7 +64,7 @@ def test_analytics_verification(analytics_test):
     从程序执行日志中提取对比成功的埋点数据，并与远程CSV数据进行验证
     """
     # 设备MAC地址，根据用户提供的信息
-    DEVICE_MAC_ADDRESS = "98:C9:BE:38:32:C8"
+    DEVICE_MAC_ADDRESS = "98:C9:BE:1B:19:F2"
     
     # 修正日志目录路径 - 使用绝对路径或相对项目根目录的路径
     LOG_DIR = "logs"  # 直接使用相对路径
@@ -72,7 +72,7 @@ def test_analytics_verification(analytics_test):
     # LOG_DIR = os.path.join(os.path.dirname(__file__), "..", "logs")
     
     # 等待时间（分钟），用于远程验证
-    WAIT_MINUTES = 0
+    WAIT_MINUTES = 20
     
     with allure.step("从程序执行日志中提取埋点事件信息"):
         analytics_test.log_utils.analytics_logger.info(f"开始从日志目录 {LOG_DIR} 中提取埋点事件信息")

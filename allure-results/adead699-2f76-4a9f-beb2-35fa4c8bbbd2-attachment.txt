@@ -1,1 +1,0 @@
-{'model': '95P01MTL', 'android_version': '14', 'screen_size': '3840x2160', 'override_size': '1920x1080', 'device_id': '2560050267000046'}

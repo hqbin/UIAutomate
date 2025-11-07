@@ -1,6 +1,0 @@
-时间: 11-07 18:36:04.901
-操作时间: 2025-11-07 18:36:58.448
-时间匹配(分钟级别): True
-统一格式化后操作时间: 2025-11-07 18:36
-统一格式化后事件时间: 2025-11-07 18:36
-日志: 11-07 18:36:04.901  1354 10966 D WhaleTrackService: ReportEvents2 Child Thread ID:147 action:110100006 souce:Remote Control target: param:{"appName":"WhaleLauncher","packageName":"com.whaletv.launcher","versionName":"2.0.2.32-ZSNMaster-prod","versionCode":"20000232"} result:

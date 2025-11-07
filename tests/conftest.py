@@ -5,11 +5,28 @@ from datetime import datetime
 import logging
 import sys
 
+
 # 添加项目根目录到Python路径
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, project_root)  # 插入到路径最前面，确保优先导入
+
+print(f"Python path: {sys.path}")
+print(f"Project root: {project_root}")
+print(f"Current working directory: {os.getcwd()}")
 
 # 导入自定义工具
-from utils.adb_utils import get_adb_utils
+try:
+    from utils.adb_utils import get_adb_utils
+    print("Successfully imported get_adb_utils")
+except ImportError as e:
+    print(f"Failed to import get_adb_utils: {e}")
+    # 尝试直接导入模块
+    import importlib.util
+    spec = importlib.util.spec_from_file_location("adb_utils", os.path.join(project_root, "utils", "adb_utils.py"))
+    adb_utils_module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(adb_utils_module)
+    get_adb_utils = adb_utils_module.get_adb_utils
+    print("Imported get_adb_utils using importlib")
 from utils.image_recognition import get_image_recognition
 from utils.log_utils import get_log_utils
 from utils.analytics_test_base import AnalyticsTestBase

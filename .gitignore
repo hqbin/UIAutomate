@@ -209,3 +209,5 @@ __marimo__/
 dist
 build
 reports
+allure-results
+logs
