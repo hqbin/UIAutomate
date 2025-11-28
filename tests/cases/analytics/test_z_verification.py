@@ -13,55 +13,58 @@ def extract_events_from_log_file_fixed(log_file_path):
     try:
         with open(log_file_path, "r", encoding="latin1") as f:
             for line in f:
-                # 检查是否包含Match Event Detail
+                # 只处理包含Match Event Detail的行
                 if "Match Event Detail" in line:
                     # 提取event_id
                     event_match = re.search(r"event_id=(\d+)", line)
-                    event = event_match.group(1) if event_match else "N/A"
-                    
-                    # 尝试提取时间戳和数据字段
-                    timestamp = "N/A"
-                    data_fields = []
-                    
-                    # 处理zeasn_HttpRequest格式: params:{"data":"时间戳,字段1,字段2,..."
-                    if "zeasn_HttpRequest" in line:
-                        data_match = re.search(r'params:\{"data":"([^"]*)","logType"', line)
-                        if data_match:
-                            data_content = data_match.group(1)
-                            # 将data内容按逗号分割成多个字段
-                            data_fields = data_content.split(',')
-                            # 第一个字段是时间戳
-                            if len(data_fields) > 0:
-                                timestamp = data_fields[0]
-                    
-                    # 处理zeasn_db格式: EventBean{ data = 时间戳,字段1,字段2,...
-                    elif "zeasn_db" in line:
-                        data_match = re.search(r'EventBean\{ data = ([^,]*)', line)
-                        if data_match:
-                            # 提取整个data字符串
-                            full_data = data_match.group(1)
-                            # 分割数据字段
-                            data_fields = full_data.split(',')
-                            # 第一个字段是时间戳
-                            if len(data_fields) > 0:
-                                timestamp = data_fields[0]
-                    
-                    # 构建完整的事件信息
-                    event_info = {
-                        "event_id": event,
-                        "timestamp": timestamp,
-                        "data_fields": data_fields  # 包含所有逗号分隔的数据字段
-                    }
-                    
-                    # 如果有更多字段，可以单独提取一些重要的字段
-                    if len(data_fields) > 1:
-                        event_info["timezone"] = data_fields[1] if data_fields[1] else "N/A"
-                    if len(data_fields) > 5:
-                        event_info["event_record_id"] = data_fields[5] if data_fields[5] else "N/A"
-                    if len(data_fields) > 6:
-                        event_info["device_mac"] = data_fields[6] if data_fields[6] else "N/A"
-                    
-                    results.append(event_info)
+                    if event_match:
+                        event = event_match.group(1)
+                        # 根据不同的日志格式分别处理
+                        if "zeasn_HttpRequest" in line:
+                            # 提取zeasn_HttpRequest格式的数据
+                            data_match = re.search(r'params:\{"data":"([^"]*)","logType"', line)
+                            if data_match:
+                                data_content = data_match.group(1)
+                                data_fields = data_content.split(',')
+                                if data_fields:
+                                    timestamp = data_fields[0]
+                                    # 构建事件信息
+                                    event_info = {
+                                        "event_id": event,
+                                        "timestamp": timestamp,
+                                        "data_fields": data_fields
+                                    }
+                                    # 提取其他字段
+                                    if len(data_fields) > 1:
+                                        event_info["timezone"] = data_fields[1]
+                                    if len(data_fields) > 5:
+                                        event_info["event_record_id"] = data_fields[5]
+                                    if len(data_fields) > 6:
+                                        event_info["device_mac"] = data_fields[6]
+                                    results.append(event_info)
+                        
+                        elif "zeasn_db" in line:
+                            # 提取zeasn_db格式的数据
+                            data_match = re.search(r'EventBean\{ data = ([^,]*)', line)
+                            if data_match:
+                                full_data = data_match.group(1)
+                                data_fields = full_data.split(',')
+                                if data_fields:
+                                    timestamp = data_fields[0]
+                                    # 构建事件信息
+                                    event_info = {
+                                        "event_id": event,
+                                        "timestamp": timestamp,
+                                        "data_fields": data_fields
+                                    }
+                                    # 提取其他字段
+                                    if len(data_fields) > 1:
+                                        event_info["timezone"] = data_fields[1]
+                                    if len(data_fields) > 5:
+                                        event_info["event_record_id"] = data_fields[5]
+                                    if len(data_fields) > 6:
+                                        event_info["device_mac"] = data_fields[6]
+                                    results.append(event_info)
     except Exception as e:
         print(f"[DEBUG] 读取日志文件时出错: {e}")
     return results
