@@ -76,7 +76,7 @@ def test_analytics_verification(analytics_test):
     从程序执行日志中提取对比成功的埋点数据，并与远程CSV数据进行验证
     """
     # 设备MAC地址，根据用户提供的信息
-    DEVICE_MAC_ADDRESS = "98:C9:BE:38:32:C8"
+    DEVICE_MAC_ADDRESS = "98:C9:BE:1B:19:F2"
     
     # 修正日志目录路径 - 使用绝对路径或相对项目根目录的路径
     LOG_DIR = "logs"  # 直接使用相对路径

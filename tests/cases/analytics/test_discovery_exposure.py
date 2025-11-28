@@ -40,7 +40,6 @@ def test_STB_FU_PO_2510230083(analytics_test):
             # 定义目标动作函数
             def last_action():
                 analytics_test.adb_utils.点击遥控OK()
-                time.sleep(10)
 
             # 执行复杂路径操作并验证埋点
             success, events = analytics_test.execute_path_operation_with_analytics(

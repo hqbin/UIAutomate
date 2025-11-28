@@ -2,7 +2,7 @@ import allure
 import pytest
 import time
 
-wait_time = 10
+wait_time = 60
 
 @allure.feature("apps_search搜索埋点")
 @allure.story("apps_search搜索埋点测试")

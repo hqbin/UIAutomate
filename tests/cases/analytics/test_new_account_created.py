@@ -39,7 +39,7 @@ def test_STB_FU_PO_2510230121(analytics_test):
                 time.sleep(2)
                 analytics_test.adb_utils.点击遥控OK()
                 time.sleep(2)
-                analytics_test.adb_utils.输入文本('z15880089382@163.com')
+                analytics_test.adb_utils.输入文本('z15880089385@163.com')
                 time.sleep(5)
                 analytics_test.adb_utils.点击遥控返回()
                 time.sleep(2)
