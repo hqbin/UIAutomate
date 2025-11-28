@@ -13,43 +13,55 @@ def extract_events_from_log_file_fixed(log_file_path):
     try:
         with open(log_file_path, "r", encoding="latin1") as f:
             for line in f:
-                # 检查是否包含event_id和(包含zeasn_HttpRequest或zeasn_db)
-                if "event_id=" in line and ("zeasn_HttpRequest" in line or "zeasn_db" in line):
+                # 检查是否包含Match Event Detail
+                if "Match Event Detail" in line:
                     # 提取event_id
                     event_match = re.search(r"event_id=(\d+)", line)
                     event = event_match.group(1) if event_match else "N/A"
-
-                    # 提取params:data字段中的所有数据（直到,"logType"为止）
-                    data_match = re.search(r'params:\{"data":"([^"]*)","logType"', line)
-                    if data_match:
-                        data_content = data_match.group(1)
-                        # 将data内容按逗号分割成多个字段
-                        data_fields = data_content.split(',')
-                        
-                        # 构建完整的事件信息
-                        event_info = {
-                            "event_id": event,
-                            "timestamp": data_fields[0] if len(data_fields) > 0 else "N/A",
-                            "data_fields": data_fields  # 包含所有逗号分隔的数据字段
-                        }
-                        
-                        # 如果有更多字段，可以单独提取一些重要的字段
-                        if len(data_fields) > 1:
-                            event_info["timezone"] = data_fields[1] if data_fields[1] else "N/A"
-                        if len(data_fields) > 5:
-                            event_info["event_record_id"] = data_fields[5] if data_fields[5] else "N/A"
-                        if len(data_fields) > 6:
-                            event_info["device_mac"] = data_fields[6] if data_fields[6] else "N/A"
-                        
-                        results.append(event_info)
-                    else:
-                        # 如果无法提取完整data，至少保留event_id
-                        if event != "N/A":
-                            results.append({
-                                "event_id": event,
-                                "timestamp": "N/A",
-                                "data_fields": []
-                            })
+                    
+                    # 尝试提取时间戳和数据字段
+                    timestamp = "N/A"
+                    data_fields = []
+                    
+                    # 处理zeasn_HttpRequest格式: params:{"data":"时间戳,字段1,字段2,..."
+                    if "zeasn_HttpRequest" in line:
+                        data_match = re.search(r'params:\{"data":"([^"]*)","logType"', line)
+                        if data_match:
+                            data_content = data_match.group(1)
+                            # 将data内容按逗号分割成多个字段
+                            data_fields = data_content.split(',')
+                            # 第一个字段是时间戳
+                            if len(data_fields) > 0:
+                                timestamp = data_fields[0]
+                    
+                    # 处理zeasn_db格式: EventBean{ data = 时间戳,字段1,字段2,...
+                    elif "zeasn_db" in line:
+                        data_match = re.search(r'EventBean\{ data = ([^,]*)', line)
+                        if data_match:
+                            # 提取整个data字符串
+                            full_data = data_match.group(1)
+                            # 分割数据字段
+                            data_fields = full_data.split(',')
+                            # 第一个字段是时间戳
+                            if len(data_fields) > 0:
+                                timestamp = data_fields[0]
+                    
+                    # 构建完整的事件信息
+                    event_info = {
+                        "event_id": event,
+                        "timestamp": timestamp,
+                        "data_fields": data_fields  # 包含所有逗号分隔的数据字段
+                    }
+                    
+                    # 如果有更多字段，可以单独提取一些重要的字段
+                    if len(data_fields) > 1:
+                        event_info["timezone"] = data_fields[1] if data_fields[1] else "N/A"
+                    if len(data_fields) > 5:
+                        event_info["event_record_id"] = data_fields[5] if data_fields[5] else "N/A"
+                    if len(data_fields) > 6:
+                        event_info["device_mac"] = data_fields[6] if data_fields[6] else "N/A"
+                    
+                    results.append(event_info)
     except Exception as e:
         print(f"[DEBUG] 读取日志文件时出错: {e}")
     return results
@@ -78,6 +90,8 @@ def test_analytics_verification(analytics_test):
         analytics_test.log_utils.analytics_logger.info(f"开始从日志目录 {LOG_DIR} 中提取埋点事件信息")
         
         # 定义程序执行日志文件路径模式
+        # "analytics_tracking_\d{8}_\d{6}\.log"
+        
         log_file_pattern = re.compile(r"analytics_tracking_\d{8}_\d{6}\.log")
         
         # 从日志中提取的事件列表
@@ -112,7 +126,6 @@ def test_analytics_verification(analytics_test):
                 
                 try:
                     file_events = extract_events_from_log_file_fixed(log_file)
-                    
                     # 转换提取的事件格式并直接添加到验证列表（不去重）
                     for event in file_events:
                         timestamp = event.get('timestamp', 'N/A')
